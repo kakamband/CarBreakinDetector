@@ -3,16 +3,19 @@ from joblib import load
 import numpy as np
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import tensorflow.lite as tf
+from urllib.request import urlopen
 
 #loading data and model
-@st.cache(persist=True)
+
+
+@st.cache()
 def load_data(file):
     return load(file)
 
 X = load_data('./data/imgs.pkl')
 y = load_data('./data/labels.pkl')
 
-@st.cache(persist=True)
+@st.cache()
 def load_cnn():
     cnn = tf.Interpreter(model_path='./Saved Models/tuned_cnn.tflite')
     return cnn
@@ -33,7 +36,7 @@ st.write('A batch of 32 augmented images can be generated and predicted based on
 st.write('The Positive class is any image in the dataset that contains something resembling broken glass with or without a car.')
 st.write('The Negative class is any image in the dataset that contains a car with no broken glass.')
 
-st.header('Github repo:')
+st.header('Github:')
 st.write('github.com/ian-andriot')
 
 st.sidebar.header('Augmentation Parameters')
