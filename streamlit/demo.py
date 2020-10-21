@@ -3,11 +3,8 @@ from joblib import load
 import numpy as np
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import tensorflow.lite as tf
-from urllib.request import urlopen
 
 #loading data and model
-
-
 @st.cache()
 def load_data(file):
     return load(file)
