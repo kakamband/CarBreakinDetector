@@ -18,13 +18,13 @@ At most, a car is only protecting it's contents with a sheet of glass. If a thie
 
 The first step to any data project is acquiring said data. Data from [kaggle](https://www.kaggle.com/anujms/car-damage-detection) and [peltarion](https://peltarion.com/knowledge-center/documentation/tutorials/car-damage-assessment) were the only places with prebundled images of car damage found to start the project. Between both of these datasets, there was only about 200 images depicting a car with broken glass. For this reason the [flickr](https://www.flickr.com/) api was used in [this notebook](https://github.com/ian-andriot/CarBreakinDetector/blob/main/1_flickr_api.ipynb) to acquire additional images. The target was also expanded to include any broken glass. This totalled to 618 images for the broken glass target and 1150 images for cars - the car class using the kaggle dataset exclusively.
 
-After acquiring data, exploratory data analysis was the conducted in the [eda notebook](https://github.com/ian-andriot/CarBreakinDetector/blob/main/2_eda.ipynb). Preprocessing techniques such as scaling, resized, and Histogram of Oriented Gradients was also explored here.
+After acquiring data, exploratory data analysis was then conducted in the [eda notebook](https://github.com/ian-andriot/CarBreakinDetector/blob/main/2_eda.ipynb). Preprocessing techniques such as scaling, resized, and Histogram of Oriented Gradients were also explored here.
 
 The preprocessing techniques previous noted were then applied in the [modeling notebook](https://github.com/ian-andriot/CarBreakinDetector/blob/main/3_modeling.ipynb). Modeling techniques utilizing Support Vector Machines and Convolutional Neural Networks were used as well Bayesian Optimization and Hyperbanding for hyperparameter tuning.
 
 ## Results
 
-The final model ([Saved Models/tuned_cnn.tflite](https://github.com/ian-andriot/CarBreakinDetector/blob/main/Saved%20Models/tuned_cnn.tflite)) results in an accuracy score of 96% and a roc auc score of 0.98 on the validation set. The most common images that are missed seems to be when the a window is smashed cleaned with little glass left or if there is too much added augmentation.
+The final model ([Saved Models/tuned_cnn.tflite](https://github.com/ian-andriot/CarBreakinDetector/blob/main/Saved%20Models/tuned_cnn.tflite)) results in an accuracy score of 96% and a roc auc score of 0.98 on the validation set. The most common images that are missed seems to be when a window is smashed cleaned with little glass left or if there is too much added augmentation.
 
 ## Demo
 
