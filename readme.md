@@ -14,7 +14,7 @@ At most, a car is only protecting it's contents with a sheet of glass. If a thie
 
 ## Summary
 
-![car](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/car/0013.jpg) ![breakin](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/glass/68.jpeg) ![breakinfromflickr](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/glass/49249154547_958c21f5a7_n.jpg)
+![car](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/car/0013.jpg) ![breakin](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/glass/68.jpeg)
 
 The first step to any data project is acquiring said data. Data from [kaggle](https://www.kaggle.com/anujms/car-damage-detection)(example image on left) and [peltarion](https://peltarion.com/knowledge-center/documentation/tutorials/car-damage-assessment)(example image on right) were the only places with prebundled images of car damage found to start the project. Between both of these datasets, there was only about 200 images depicting a car with broken glass.
 
