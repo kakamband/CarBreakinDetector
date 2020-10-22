@@ -16,7 +16,11 @@ At most, a car is only protecting it's contents with a sheet of glass. If a thie
 
 ![car](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/car/0013.jpg) ![breakin](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/glass/68.jpeg) ![breakinfromflickr](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/glass/49249154547_958c21f5a7_n.jpg)
 
-The first step to any data project is acquiring said data. Data from [kaggle](https://www.kaggle.com/anujms/car-damage-detection)(example image on left) and [peltarion](https://peltarion.com/knowledge-center/documentation/tutorials/car-damage-assessment)(example image middle) were the only places with prebundled images of car damage found to start the project. Between both of these datasets, there was only about 200 images depicting a car with broken glass. For this reason the [flickr](https://www.flickr.com/)(example image on right) api was used in [this notebook](https://github.com/ian-andriot/CarBreakinDetector/blob/main/1_flickr_api.ipynb) to acquire additional images and the target was expanded to include all broken glass. This totalled to 618 images for the broken glass target and 1150 images for cars - the car class using the kaggle dataset exclusively.
+The first step to any data project is acquiring said data. Data from [kaggle](https://www.kaggle.com/anujms/car-damage-detection)(example image on left) and [peltarion](https://peltarion.com/knowledge-center/documentation/tutorials/car-damage-assessment)(example image on right) were the only places with prebundled images of car damage found to start the project. Between both of these datasets, there was only about 200 images depicting a car with broken glass.
+
+![breakinfromflickr](https://github.com/ian-andriot/CarBreakinDetector/blob/main/images/glass/49249154547_958c21f5a7_n.jpg)
+
+For this reason the [flickr](https://www.flickr.com/)(example image above) api was used in [this notebook](https://github.com/ian-andriot/CarBreakinDetector/blob/main/1_flickr_api.ipynb) to acquire additional images and the target was expanded to include all broken glass. This totalled to 618 images for the broken glass target and 1150 images for cars - the car class using the kaggle dataset exclusively.
 
 After acquiring data, exploratory data analysis was the conducted in the [eda notebook](https://github.com/ian-andriot/CarBreakinDetector/blob/main/2_eda.ipynb). Preprocessing techniques such as scaling, resized, and Histogram of Oriented Gradients was also explored here.
 
